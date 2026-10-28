@@ -1,71 +1,70 @@
-# Bubble Sort Visualizer (Angular)
+# Bubble Sort Visualizer
 
-A visualizer for the Bubble Sort algorithm, converted to **Angular 22** using standalone components, reactive signals, Web Audio API procedural sound synthesis, and smooth FLIP layout animations.
+An interactive visualization of the Bubble Sort algorithm, built with **Angular 22**. It uses standalone components, reactive signals, smooth FLIP animations, and procedural audio generated with the Web Audio API.
 
-## Live
+## Live Demo
 
-[View live application](https://thinkphp.github.io/angular-bubblesort-visualizer/)
-
----
+[View the application](https://thinkphp.github.io/angular-bubblesort-visualizer/)
 
 ## Features
 
-- **Bubble Sort Visualizer**: Step-by-step visualization of comparisons, swaps, and sorted elements.
-- **Audio Synthesis (*Sound of Sorting*)**: Procedural sound tones generated via Web Audio API, with pitch proportional to element value and celebration victory arpeggios.
-- **Dynamic Telemetry HUD**: Live metrics tracking Comparisons, Swaps, Pass Progress, and O(n²) complexity.
-- **Dataset Presets**:
-  - Random
-  - Reversed (Worst-case)
-  - Nearly Sorted
-  - Few Unique (Duplicates)
-- **Fluid FLIP Animations**: High-performance hardware-accelerated bar swapping without heavy external animation dependencies.
-- **Interactive Controls**: Play, Pause, Resume, Reset, and Speed toggles (`0.5×`, `1×`, `2×`, `4×`).
+- **Step-by-step sorting:** See comparisons, swaps, and sorted elements as Bubble Sort runs.
+- **Procedural audio:** Hear tones whose pitch corresponds to each element's value, plus a completion arpeggio.
+- **Live metrics:** Track comparisons, swaps, pass progress, and the algorithm's O(n²) complexity.
+- **Dataset presets:** Choose Random, Reversed (worst case), Nearly Sorted, or Few Unique (duplicates).
+- **Smooth animations:** Bar swaps use FLIP animations without an external animation library.
+- **Playback controls:** Play, pause, resume, reset, and adjust the speed (0.5×, 1×, 2×, or 4×).
 
----
+## Getting Started
 
-## Development Server
+### Requirements
 
-To run the application locally:
+- Node.js and npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
 
 ```bash
 npm start
-# sau: ng serve
 ```
 
-Deschide în browser la `http://localhost:4200/`.
+Then open [http://localhost:4200/](http://localhost:4200/) in your browser. You can also start the server with `npx ng serve`.
 
----
+## Build
 
-## Deploy pe GitHub Pages
+Create a production build with:
 
-### Metoda 1: Folosind scriptul automat `npm run deploy`
-
-1. Asigură-te că ai creat repository-ul pe GitHub (de exemplu `bubblesort-visualizer`) și ai adăugat remote-ul:
-   ```bash
-   git remote add origin git@github.com:USERNAME/bubblesort-visualizer.git
-   ```
-
-2. Rulează comanda de deploy:
-   ```bash
-   npm run deploy
-   ```
-   *(Această comandă rulează `ng build --base-href /bubblesort-visualizer/` și publică automat directorul de browser pe branch-ul `gh-pages`)*
-
-3. În setările repository-ului de pe GitHub (`Settings` -> `Pages`):
-   - La **Source**, selectează `Deploy from a branch`.
-   - La branch, selectează `gh-pages` și folderul `/(root)`.
-   - Salvează. Aplicația va fi online la `https://USERNAME.github.io/bubblesort-visualizer/`.
-
----
-
-## Testare & Build
-
-Pentru rularea testelor unitare:
-```bash
-npm test -- --watch=false
-```
-
-Pentru generarea build-ului de producție:
 ```bash
 npm run build
 ```
+
+The generated files are written to `dist/angular-bubblesort-visualizer/browser`.
+
+## Tests
+
+Run the project tests with:
+
+```bash
+npm test
+```
+
+## Deploy to GitHub Pages
+
+The project includes a deploy script configured for the `angular-bubblesort-visualizer` GitHub repository. Make sure the repository's GitHub Pages deployment permissions are configured, then run:
+
+```bash
+npm run deploy
+```
+
+The script builds the app with the `/angular-bubblesort-visualizer/` base path and publishes the browser output to the `gh-pages` branch. The application is available at:
+
+```text
+https://USERNAME.github.io/angular-bubblesort-visualizer/
+```
+
+Replace `USERNAME` with your GitHub username. For a differently named repository, update the `--base-href` and `--dir` values in the `deploy` script in `package.json`.
