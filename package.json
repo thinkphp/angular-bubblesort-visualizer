@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href /bubblesort-visualizer/ && npx angular-cli-ghpages --dir=dist/bubblesort-visualizer/browser"
   },
   "private": true,
   "packageManager": "npm@11.20.0",
