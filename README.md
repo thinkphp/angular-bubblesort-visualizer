@@ -2,7 +2,7 @@
 
 A visualizer for the Bubble Sort algorithm, converted to **Angular 22** using standalone components, reactive signals, Web Audio API procedural sound synthesis, and smooth FLIP layout animations.
 
-## 🚀 Live Demo
+## Live
 
 [View live application](https://thinkphp.github.io/angular-bubblesort-visualizer/)
 

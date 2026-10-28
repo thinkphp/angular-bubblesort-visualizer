@@ -1,5 +1,5 @@
 {
-  "name": "bubblesort-visualizer",
+  "name": "angular-bubblesort-visualizer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href /bubblesort-visualizer/ && npx angular-cli-ghpages --dir=dist/bubblesort-visualizer/browser"
+    "deploy": "ng build --base-href /angular-bubblesort-visualizer/ && npx angular-cli-ghpages --dir=dist/angular-bubblesort-visualizer/browser"
   },
   "private": true,
   "packageManager": "npm@11.20.0",

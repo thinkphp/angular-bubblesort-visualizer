@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "bubblesort-visualizer": {
+    "angular-bubblesort-visualizer": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bubblesort-visualizer:build:production"
+              "buildTarget": "angular-bubblesort-visualizer:build:production"
             },
             "development": {
-              "buildTarget": "bubblesort-visualizer:build:development"
+              "buildTarget": "angular-bubblesort-visualizer:build:development"
             }
           },
           "defaultConfiguration": "development"
