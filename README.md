@@ -4,28 +4,26 @@ A visualizer for the Bubble Sort algorithm, converted to **Angular 22** using st
 
 ## 🚀 Live Demo
 
-[View live application](https://USERNAME.github.io/bubblesort-visualizer/)
-
-> *(Înlocuiește `USERNAME` cu username-ul tău de GitHub)*
+[View live application](https://thinkphp.github.io/angular-bubblesort-visualizer/)
 
 ---
 
-## 📋 Features
+## Features
 
 - **Bubble Sort Visualizer**: Step-by-step visualization of comparisons, swaps, and sorted elements.
 - **Audio Synthesis (*Sound of Sorting*)**: Procedural sound tones generated via Web Audio API, with pitch proportional to element value and celebration victory arpeggios.
 - **Dynamic Telemetry HUD**: Live metrics tracking Comparisons, Swaps, Pass Progress, and O(n²) complexity.
 - **Dataset Presets**:
-  - 🎲 Random
-  - 📉 Reversed (Worst-case)
-  - 📈 Nearly Sorted
-  - 🔁 Few Unique (Duplicates)
+  - Random
+  - Reversed (Worst-case)
+  - Nearly Sorted
+  - Few Unique (Duplicates)
 - **Fluid FLIP Animations**: High-performance hardware-accelerated bar swapping without heavy external animation dependencies.
 - **Interactive Controls**: Play, Pause, Resume, Reset, and Speed toggles (`0.5×`, `1×`, `2×`, `4×`).
 
 ---
 
-## 💻 Development Server
+## Development Server
 
 To run the application locally:
 
@@ -38,7 +36,7 @@ Deschide în browser la `http://localhost:4200/`.
 
 ---
 
-## 🚀 Deploy pe GitHub Pages
+## Deploy pe GitHub Pages
 
 ### Metoda 1: Folosind scriptul automat `npm run deploy`
 
@@ -60,7 +58,7 @@ Deschide în browser la `http://localhost:4200/`.
 
 ---
 
-## 🧪 Testare & Build
+## Testare & Build
 
 Pentru rularea testelor unitare:
 ```bash
